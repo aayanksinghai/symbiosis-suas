@@ -330,6 +330,9 @@ class MlmWords {
   constructor() {
     this.words = [
       "Mobile",
+      "Attendance",
+      "Present",
+      "Absent",
       "Technology",
       "Wireless",
       "Laptop",
