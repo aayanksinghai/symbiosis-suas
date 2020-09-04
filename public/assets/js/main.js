@@ -63,9 +63,9 @@ class Card {
 
     for (let i = 0; 5 > i; i++) {
       const ary = [];
-      for (let j = 0; eachRange > j; j++)
-      ary.push(eachRange * i + j + 1);
-      ary.forEach((n, from) => {
+      for(let j = 0; eachRange > j; j++)
+        ary.push(eachRange * i + j + 1);
+        ary.forEach((n, from) => {
         const to = Math.floor(Math.random() * ary.length);
         const temp = ary[to];
         ary[to] = n;
@@ -119,9 +119,9 @@ class Card {
     checkbox.checked = true;
     this.myNumbers[index].punched = true;
     if (this._checkBingo(index))
-    return Card.PUNCHED_STATE.BINGO;else
-
-    return Card.PUNCHED_STATE.PUNCHED;
+      return Card.PUNCHED_STATE.BINGO;
+    else
+      return Card.PUNCHED_STATE.PUNCHED;
   }
 
   _checkBingo(index) {
@@ -160,7 +160,7 @@ class Card {
     const start = index % 5;
     const ary = [];
     for (let i = 0; 5 > i; i++)
-    ary.push(this.myNumbers[5 * i + start]);
+     ary.push(this.myNumbers[5 * i + start]);
     return ary.every(this._isPunched);
   }}
 
@@ -236,8 +236,8 @@ $(document).ready(function(){
 				}	
 					
 				var aoY = t.offset().top;
-				$("#txt").html(aoY);
-				console.log(aoY);			
+				// $("#txt").html(aoY);
+				// console.log(aoY);			
 			
 				if(aoY < 23.89){
 					console.log('<<<<<<<<');
@@ -295,8 +295,8 @@ $(document).ready(function(){
 				}	
 					
 				var aoY = t.offset().top;
-				$("#txt").html(aoY);
-				console.log(aoY);			
+				// $("#txt").html(aoY);
+				// console.log(aoY);			
 			
 				if(aoY < 23.89){
 					console.log('<<<<<<<<');
@@ -329,150 +329,87 @@ function Random(array) {
 class MlmWords {
   constructor() {
     this.words = [
-    "2",
-    "Advertising",
-    "America",
-    "Another",
-    "Ariix",
-    "Auto",
-    "Automatic",
-    "Avant",
-    "Beach",
-    "Better",
-    "Big",
-    "Biz",
-    "BizSystem",
-    "Blueprint",
-    "Boom",
-    "Brilliant",
-    "Builder",
-    "Builders",
-    "Building",
-    "Business",
-    "CEO",
-    "Cellars",
-    "Central",
-    "Central",
-    "Clarify",
-    "Cleanse",
-    "Dialer",
-    "Direct",
-    "EV",
-    "Eagle",
-    "Easy",
-    "Empower",
-    "Enhance",
-    "Enhancing",
-    "Epic",
-    "Essential",
-    "Even",
-    "Exchange",
-    "Faster",
-    "Fearless",
-    "Figures",
-    "Force",
-    "Four",
-    "Freedom",
-    "Fun",
-    "GIG",
-    "Global",
-    "Go",
-    "Green",
-    "Group",
-    "Harvest",
-    "Health",
-    "Income",
-    "Incredible",
-    "Innovative",
-    "Into",
-    "Invoice",
-    "Java",
-    "Lead",
-    "Leads",
-    "Level",
-    "Life",
-    "Lightyear",
-    "Live",
-    "Lives",
-    "M5",
-    "MCA",
-    "MDM",
-    "MLM",
-    "Making",
-    "Manager",
-    "Marketing",
-    "Meetings",
-    "Mela",
-    "Mentoring",
-    "Mission",
-    "Moms",
-    "My",
-    "National",
-    "Network",
-    "Networker",
-    "Networkers",
-    "Office",
-    "On",
-    "One",
-    "Online",
-    "Organized",
-    "Panel",
-    "Pilot",
-    "Plan",
-    "Point",
-    "Portal",
-    "Power",
-    "PowerX",
-    "Powerful",
-    "Pro",
-    "Profit",
-    "Prospect",
-    "Prospector",
-    "Prospects",
-    "Prosperity",
-    "Pure",
-    "Q",
-    "Quick",
-    "Responsive",
-    "Revolution",
-    "Sales",
-    "Sea",
-    "Secrets",
-    "Six",
-    "Store",
-    "Success",
-    "System",
-    "TV",
-    "Team",
-    "Time",
-    "Tools",
-    "Travel",
-    "Tribe",
-    "Trump",
-    "Trump",
-    "Trump",
-    "Trump",
-    "Trump",
-    "Trump",
-    "Trump",
-    "USA",
-    "Ultimate",
-    "Pros",
-    "Stream",
-    "Verified",
-    "Virtual",
-    "Walk",
-    "Warriors",
-    "Wealth",
-    "Wellness",
-    "Wireless",
-    "Worldwide",
-    "ZONE",
-    "dialer",
-    "freedom",
-    "iGo",
-    "iWealth",
-    "power"];
+      "Mobile",
+      "Technology",
+      "Wireless",
+      "Laptop",
+      "SUAS",
+      "Moodle",
+      "Lonely",
+      "Topper",
+      "ATKT",
+      "Examination",
+      "House",
+      "Noise",
+      "Hair",
+      "Ear",
+      "Monstrous",
+      "Publication",
+      "Switch",
+      "Fly",
+      "Proportion",
+      "Vibe",
+      "Print",
+      "Issue",
+      "Mic",
+      "Module",
+      "Teacher",
+      "Trigger",
+      "Simple",
+      "Fantastic",
+      "Understand",
+      "Automobile",
+      "Automata",
+      "Networking",
+      "Theta",
+      "Alpha",
+      "Beta",
+      "Meta",
+      "Class",
+      "Timing",
+      "Shoe",
+      "Sole",
+      "Reduce",
+      "Photo",
+      "Clothe",
+      "Printer",
+      "Mood",
+      "Bagpack",
+      "Keyboard",
+      "Typing",
+      "Stationary",
+      "Stabilizer",
+      "Chair",
+      "Badminton",
+      "Cheating",
+      "Notebook",
+      "Assignments",
+      "Cabinet",
+      "PUBG",
+      "Call of Duty",
+      "Bunk",
+      "Traffic",
+      "Google",
+      "Incognito",
+      "Messi",
+      "Internet",
+      "Whats App",
+      "Application",
+      "Motorcycle",
+      "Television",
+      "Wrist watch",
+      "Communication",
+      "Telekinesis",
+      "Teleport",
+      "Telepathy",
+      "Phobia",
+      "Headquarters",
+      "Vice chancellor",
+      "President",
+      "GDP",
+      "Social networking",
+      "Tangent"
+    ];
 
 
     this.length = this.words.length;
