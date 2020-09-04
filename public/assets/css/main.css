@@ -1173,7 +1173,7 @@ section {
   border-bottom: 3px solid #fff;
 }
 
-.gallery .gallery-item img {
+.gallery .gallery-item img::after {
   transition: all ease-in-out 0.4s;
 }
 
@@ -1398,7 +1398,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: green;
+  background: #fff;
   font-family: 'Poppins', sans-serif;
   color: #201c16;
 }
@@ -1407,7 +1407,7 @@ section {
   position: relative;
   height: 500px;
   width: 600px;
-  background: #e81c24;
+  background: #ffb03b;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1416,7 +1416,7 @@ section {
   border: 1px solid black;
 }
 #machine #slot-machine #handle-ball {
-  background: #e81c24;
+  background: #ffb03b;
   z-index: 9999;
   width: 85px;
   height: 85px;
@@ -1436,7 +1436,7 @@ section {
   transform: scale(1);
 }
 #machine #slot-machine #handle {
-  background: #7b7c80;
+  background: #fff;
   width: 35px;
   height: 195px;
   position: absolute;
@@ -1445,7 +1445,7 @@ section {
   border: 1px solid;
 }
 #machine #slot-machine #handle-attachment {
-  background: #7b7c80;
+  background: #fff;
   width: 85px;
   height: 125px;
   position: absolute;
@@ -1493,7 +1493,7 @@ section {
 #machine #slot-machine #bottom-panel {
   width: 90%;
   height: 25%;
-  background: grey;
+  background: #fff;
   border: 1px solid black;
   border-radius: 5px;
   display: flex;
@@ -1506,316 +1506,6 @@ section {
   height: 65px;
   background: black;
   border: 1px solid black;
-}
-
-/* MEMORY GAME */
-
-#memory {
-	font-family: 'Poppins', sans-serif;
-	font-size: 16px;
-	background: rgba(33, 46, 59, 1);
-	color: rgba(250,250,255,1);
-}
-
-#memory pre {
-	text-align: center;
-	color: rgba(74, 147, 170, 1);
-}
-
-#memory .content-memory {
-	max-width: 500px;
-	margin: 20px auto;
-}
-
-#memory .app__input, .app__end {
-	text-align: center;
-}
-
-#memory .app__end {
-	margin-top: 40px;
-}
-
-#memory input {
-	outline: none;
-	border: none;
-	margin: 0 0 20px 3px;
-	padding: 8px 5px 0px 0;
-	background: transparent;
-	color: rgba(250,250,255,1);
-	font-size: 20px;
-	border-bottom: 1px dotted rgba(91,114,127,1);
-}
-
-#memory button {
-	background: transparent;
-	border: 1px dashed rgba(250,250,255,1);
-	outline: none;
-	cursor: pointer;
-	color: rgba(250,250,255,1);
-	padding: 8px 30px 9px;
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
-#memory .app__gen-number {
-	text-align: center;
-}
-
-#memory .app__divider {
-	color: rgba(91,114,127,1);
-	margin: 20px 0;
-}
-
-#memory .app__number {
-	font-size: 36px;
-	color: rgba(244, 89, 87, 1);
-}
-
-#memory .app__info:before,
-.app__info:after {
-	content: ' ';
-	display: table;
-}
-
-#memory .app__info:after {
-	clear: both;
-}
-
-#memory .app__info {
-	margin: 20px 0;
-}
-
-#memory .app__level {
-	float: left;
-	color: rgba(244, 192, 37, 1);
-}
-
-#memory .app__wrong {
-	float: right;
-	color: rgba(244, 89, 87, 1);
-}
-
-#memory .app__author {
-	font-family: 'Poppins', sans-serif;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	color: rgba(33, 150, 243, 1);
-	text-decoration: none;
-}
-
-
-/* SIMON GAME */
-
-#simon .inline{
-  display: inline-block;
-}
-
-#simon .push{
-  position  : relative;
-  width:200px;
-  height:200px;
-  background-color : grey;
-  border: 12px solid #333;
-}
-
-#simon .rw{
-  margin-bottom:-4px;
-}
-
-#simon .b-r{
-  border-bottom-right-radius : 100%;
-}
-
-#simon .b-l{
-  border-bottom-left-radius : 100%;
-}
-
-#simon .t-l{
-  border-top-left-radius : 100%;
-}
-
-#simon .t-r{
-  border-top-right-radius : 100%;
-} 
-
-#simon .wrap{
-  width: 472px;
-  height:472px;
-  border-radius:100%;
-  position: relative;
-  text-align: center;
-  margin:auto;
-  background-color:#333;
-  box-shadow: 0px 0px 12px #222;
-}
-
-.wrap-in{
-  position: relative;
-  top:12px;
-}
-.center{
-  width:220px;
-  height:220px;
-  position : absolute;
-  border-radius:100%;
-  top:50%;
-  left:50%;
-  margin: -122px 0 0  -122px;
-  background-color:#ECE7EE;
-  border: 12px solid #333;
-}
-
-#simon .brand{
-  font-family: 'Poppins', sans-serif;
-  color : #222;
-  font-size: 3.2em;
-  margin-top : 35px;
-}
-
-#simon .brand .small{
-  font-size : 0.3em;
-  position : relative;
-  top : -20px;
-}
-
-#simon .count{
-  font-family: 'Poppins', sans-serif;
-  color : #DC0D29;
-  padding : 0px;
-  font-size : 2em;
-  width : 50px;
-  background-color: #32050C;
-  position:relative;
-  border : 4px solid #222;
-  border-radius : 10px;
-  margin:auto;
-}
-
-#simon .round-btn{
-  width : 20px;
-  height : 20px;
-  position: relative;
-  background-color : yellow;
-  border-radius : 100%;
-  border : 4px solid #444;
-  box-shadow : 0px 2px 3px #222;
-  margin:auto;
-  top : -5px;
-}
-
-#simon .round-btn:active{
-    box-shadow : 0 1px 1px #292929;
-    top : -4px;
-}
-
-#simon .clickable{
-  pointer-events : auto;
-  cursor:pointer;
-}
-
-#simon .unclickable{
-  pointer-events:none;
-}
-
-#simon .led{
-  width:6px;
-  height:6px;
-  background-color: #32050C;
-  border-radius : 100%;
-  position: absolute;
-  left:0;
-  right: 0;
-  margin : auto;
-  border: 2px solid #222;
-  top: -18px;
-}
-
-#simon .led-on{
-  background-color:#DC0D29;
-}
-
-#simon .led-off{
-  color:#430710;
-}
-
-#simon .label{
-  color : #222;
-  font-family : 'Poppins',sans-serif;
-  font-size:0.7em;
-  margin-top:5px;
-  text-align:center;
-}
-
-#simon .display{
-  width : 60px;
-  position:relative;
-  text-align:center;
-}
-
-#simon .btn-box{
-  width : 50px;
-  position:relative;
-}
-
-#simon .sw-slot{
-  height:20px;
-  width:40px;
-  background-color : #222;
-  position:relative;
-  top:5px;
-  border-radius:2px;
-  cursor: pointer;
-}
-
-#simon .switch{
-  height:16px;
-  width: 16px;
-  border-radius:4px;
-  background-color : #3193DE;
-  position:relative;
-  border : 2px solid #333;
-}
-
-#simon .sw-on{
-  left:20px;
-}
-#simon .rw.bot{
-  margin-top: 10px;
-}
-#simon .full-red{
-  background-color : #FC0102;
-}
-#simon .red{
-  background-color : #9f0f17;
-}
-
-#simon .green{
-  background-color : #00a74a;
-}
-
-#simon .yellow{
-  background-color : #cca707;
-}
-
-#simon .blue{
-  background-color : #094a8f;
-}
-
-#simon .yellow.light{
-  background-color : #fed93f;
-}
-
-#simon .blue.light{
-  background-color : #1c8cff;
-}
-
-#simon .red.light{
-  background-color : #ff4c4c;
-}
-
-#simon .green.light{
-  background-color : #13ff7c;
 }
 
 /* Scaling for Mobile */
