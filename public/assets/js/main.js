@@ -893,7 +893,50 @@ $(document).ready(function(){
 
 // ========================================
 
-  
+// RESULT SHEET JS
+class Table extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      students: [
+      { id: 1, name: 'Wasif'},
+      { id: 2, name: 'Ali' },
+      { id: 3, name: 'Saad' },
+      { id: 4, name: 'Asad'}] 
+    };
+  }
+
+  renderTableHeader() {
+    let header = Object.keys(this.state.students[0]);
+    return header.map((key, index) => {
+      return React.createElement("th", { key: index }, key.toUpperCase());
+    });
+  }
+
+  renderTableData() {
+    return this.state.students.map((student, index) => {
+      const { id, name} = student; //destructuring
+      return (
+        React.createElement("tr", { key: id },
+        React.createElement("td", null, id),
+        React.createElement("td", null, name)));
+    });
+  }
+
+  render() {
+    return (
+      React.createElement("div", null,
+      React.createElement("h1", { id: "title" }, "RESULTS"),
+      React.createElement("table", { id: "students" },
+      React.createElement("tbody", null,
+      React.createElement("tr", null, this.renderTableHeader()),
+      this.renderTableData()))));
+  }}
+
+
+ReactDOM.render(React.createElement(Table, null), document.getElementById('result'));
+
+// END OF RESULT
 
 // MAIN
 
