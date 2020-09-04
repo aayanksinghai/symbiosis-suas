@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
 
   <!-- CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.3/milligram.min.css'><link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -140,7 +142,9 @@
       <div class="">
   
         <div class="content">
-          <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+          <div class="section-title">
+            <h2><span>Eum ipsam laborum deleniti </span> velit pariatur architecto aut nihil</h2>
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
           </p>
@@ -181,7 +185,9 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
             <div class="content">
-              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+              <div class="section-title">
+                <h2><span>Eum ipsam laborum deleniti </span> velit pariatur architecto aut nihil</h2>
+              </div>  
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p>
@@ -576,6 +582,45 @@
 </section>
 
 <!-- End of Machine -->
+
+  <!-- Bingo -->
+  <section id="bingo-game">
+    <div class="container">
+      <div class="section-title">
+        <h2><span>Bingo </span> Game</h2>
+      </div>
+      <div class="d-flex">
+        <div class="mx-auto">
+          <div class="card column column-50">
+            <table id="bingo-table">
+              <thead>
+                <tr>
+                  <th>B</th>
+                  <th>I</th>
+                  <th>N</th>
+                  <th>G</th>
+                  <th>O</th>
+                </tr>
+              </thead>
+              <tbody id="bingo-body">
+              </tbody>
+            </table>
+          </div>
+          <div class="machine column column-20 d-flex">
+              <div class="mx-auto mt-3">
+                <button style="background-color: #ffa03b; border: 0;" id="init">Init</button>
+              </div>
+            <ul id="messages"></ul>
+          </div>
+          <div style="display: none;" class="column column-30">
+            <ol id="numbers-list">
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Bingo -->
 
 
     <!-- ======= Contact Section ======= -->
