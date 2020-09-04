@@ -486,7 +486,7 @@ class SlotMachine extends React.Component {
     return (
       React.createElement("div", null,
       React.createElement("div", { id: "slot-machine" },
-      React.createElement("h1", null, "System Name Picker"),
+      React.createElement("h1", null, ""),
       React.createElement("div", { id: "real-container" },
       React.createElement(Reel, { word: this.state.reels[0] }),
       React.createElement(Reel, { word: this.state.reels[1] }),
