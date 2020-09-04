@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #CC0001;
+  background: #ffb03b;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background-color: #FF0000;
+  background-color: #ffb03b;
 }
 
 .back-to-top i {
