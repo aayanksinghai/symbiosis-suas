@@ -602,10 +602,11 @@ ReactDOM.render(React.createElement(SlotMachine, null), document.getElementById(
 //     super(props);
 //     this.state = {
 //       students: [
-//       { id: 1, name: 'Wasif'},
-//       { id: 2, name: 'Ali' },
-//       { id: 3, name: 'Saad' },
-//       { id: 4, name: 'Asad'}] 
+//       { id: 1, name: 'Wasif', marks: '30', rank: 'I'},
+//       { id: 2, name: 'Ali', marks: '30', rank: 'II'},
+//       { id: 3, name: 'Saad', marks: '30', rank: 'III'},
+//       { id: 4, name: 'Asad', marks: '30', rank: 'IV'}
+//     ] 
 //     };
 //   }
 
@@ -618,11 +619,13 @@ ReactDOM.render(React.createElement(SlotMachine, null), document.getElementById(
 
 //   renderTableData() {
 //     return this.state.students.map((student, index) => {
-//       const { id, name} = student; //destructuring
+//       const { id, name, marks, rank} = student; //destructuring
 //       return (
 //         React.createElement("tr", { key: id },
 //         React.createElement("td", null, id),
-//         React.createElement("td", null, name)));
+//         React.createElement("td", null, name),
+//         React.createElement("td", null, marks),
+//         React.createElement("td", null, rank)));
 //     });
 //   }
 

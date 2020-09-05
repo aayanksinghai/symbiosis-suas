@@ -1406,6 +1406,11 @@ section {
   color: #201c16;
 }
 
+#machine .swing {
+  font-family: system-ui;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
 
 
 #machine #slot-machine {
@@ -1554,6 +1559,8 @@ section {
 #students td, #students th {
   border: 1px solid #ddd;
   padding: 8px;
+  text-align: center;
+  font-size: 18px;
 }
 
 #students tr:nth-child(even){background-color: #f2f2f2;}
