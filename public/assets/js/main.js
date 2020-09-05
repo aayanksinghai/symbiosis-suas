@@ -597,50 +597,50 @@ ReactDOM.render(React.createElement(SlotMachine, null), document.getElementById(
 // ========================================
 
 // // RESULT SHEET JS
-// class Table extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       students: [
-//       { id: 1, name: 'Wasif', marks: '30', rank: 'I'},
-//       { id: 2, name: 'Ali', marks: '30', rank: 'II'},
-//       { id: 3, name: 'Saad', marks: '30', rank: 'III'},
-//       { id: 4, name: 'Asad', marks: '30', rank: 'IV'}
-//     ] 
-//     };
-//   }
+class Table extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      students: [
+      { id: 1, name: 'Dr. Ritu Jain', marks: '34.5', rank: 'I'},
+      { id: 2, name: 'Mr. Makrand Samvatsar', marks: '33.5', rank: 'II'},
+      { id: 3, name: 'Mr. Abhishek Anand', marks: '31', rank: 'III'}
+     
+    ] 
+    };
+  }
 
-//   renderTableHeader() {
-//     let header = Object.keys(this.state.students[0]);
-//     return header.map((key, index) => {
-//       return React.createElement("th", { key: index }, key.toUpperCase());
-//     });
-//   }
+  renderTableHeader() {
+    let header = Object.keys(this.state.students[0]);
+    return header.map((key, index) => {
+      return React.createElement("th", { key: index }, key.toUpperCase());
+    });
+  }
 
-//   renderTableData() {
-//     return this.state.students.map((student, index) => {
-//       const { id, name, marks, rank} = student; //destructuring
-//       return (
-//         React.createElement("tr", { key: id },
-//         React.createElement("td", null, id),
-//         React.createElement("td", null, name),
-//         React.createElement("td", null, marks),
-//         React.createElement("td", null, rank)));
-//     });
-//   }
+  renderTableData() {
+    return this.state.students.map((student, index) => {
+      const { id, name, marks, rank} = student; //destructuring
+      return (
+        React.createElement("tr", { key: id },
+        React.createElement("td", null, id),
+        React.createElement("td", null, name),
+        React.createElement("td", null, marks),
+        React.createElement("td", null, rank)));
+    });
+  }
 
-//   render() {
-//     return (
-//       React.createElement("div", null,
-//       React.createElement("h1", { id: "title" }, "RESULTS"),
-//       React.createElement("table", { id: "students" },
-//       React.createElement("tbody", null,
-//       React.createElement("tr", null, this.renderTableHeader()),
-//       this.renderTableData()))));
-//   }}
+  render() {
+    return (
+      React.createElement("div", null,
+      React.createElement("h1", { id: "title" }, "RESULTS"),
+      React.createElement("table", { id: "students" },
+      React.createElement("tbody", null,
+      React.createElement("tr", null, this.renderTableHeader()),
+      this.renderTableData()))));
+  }}
 
 
-// ReactDOM.render(React.createElement(Table, null), document.getElementById('result'));
+ReactDOM.render(React.createElement(Table, null), document.getElementById('result'));
 
 // // END OF RESULT
 
